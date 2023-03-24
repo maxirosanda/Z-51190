@@ -1,8 +1,29 @@
+const ingresoDedatos = (mensaje,tipoDeDato) => {
+    let valor
+    if(tipoDeDato == "numero"){
+        do{
+            valor = parseFloat(prompt(mensaje))
+        }while(isNaN(valor))
+    }
+    if(tipoDeDato == "operacion"){
+        do{
+            valor =  prompt(mensaje)
+        }while(valor != "+" && valor != "-" && valor !="*" && valor !="/")
+    }
+    return valor
+}
 
-for(let i = 1;i<=5;i++){
-    const operacion = prompt("Colocar Operacion: 1) + 2) - 3) * 4) /")
-    const valor1 = parseFloat(prompt("ingrese un numero")) 
-    const valor2 =  parseFloat(prompt("Ingrese otro numero")) 
+let continuar = true
+while(continuar){
+
+    let operacion = ingresoDedatos("ingrese operacion","operacion")
+    let valor1 = ingresoDedatos("ingrese un numero","numero")
+    let valor2 = ingresoDedatos("ingreso otro numero","numero")
+    console.log(operacion)
+    console.log(valor1)
+    console.log(valor2)
+
+// evalua el resultado   
     let resultado = 0
     switch (operacion){
         case "+":
@@ -21,7 +42,10 @@ for(let i = 1;i<=5;i++){
             resultado = "Operacion matematica desconocida"
 
     }
+
+//muestra el reltado 
     alert(resultado)
+     continuar = confirm("queres seguir?")
 }
 console.log("sigue")
 
