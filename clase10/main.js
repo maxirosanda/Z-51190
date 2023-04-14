@@ -1,14 +1,4 @@
-/*
-const evento1 = document.querySelector("#evento1")
 
-evento1.addEventListener("keyup",(e)=>{
-    console.log(e.key)
-})
-const eventoInput = document.querySelector("#eventoInput")
-eventoInput.addEventListener("input",(e)=>{
-    console.log(e.target.value)
-})
-*/
 const productos = [
     {
         id:1,
