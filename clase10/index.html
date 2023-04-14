@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--
+    <button id="evento1">Boton</button>
+    <input type="text" id="eventoInput">
+    -->
+    <form id="crearProducto" class="formulario">
+        <h3>Crear Producto</h3>
+        <input type="text" placeholder="Ingrese un producto" name="nombre" required>
+        <input type="number" placeholder="Ingrese Precio del producto" name="precio" required>
+        <input type="number" placeholder="Ingrese stock" name="stock" required>
+        <button type="submit">Crear un producto</button>
+    </form>
+    <div id="contenedorProductos"></div>
+    <script src="./main.js"></script>
+</body>
+</html>

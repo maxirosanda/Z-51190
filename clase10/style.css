@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.formulario{
+    max-width: 450px;
+    background-color: blueviolet;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.formulario input{
+    background-color: blueviolet;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+}
+.formulario input::placeholder{
+    color: white;
+}
+.formulario input:focus{
+    border: none;
+    border-bottom: 2px solid white;
+
+}
+
+.formulario button{
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+.formulario button:hover{
+    background-color: #d1d1d1;
+}
+#contenedorProductos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tarjeta{
+    background-color: blueviolet;
+    width: 200px;
+    margin: 10px;
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+}
