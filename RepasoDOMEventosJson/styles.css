@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navegador{
+    background-color: brown;
+}
+.navegador ul{
+    display: flex;
+    list-style: none;
+    justify-content: end;
+}
+
+.navegador ul li a{
+    display: block;
+    padding: 10px 20px;
+    color: #ccc;
+    text-decoration: none;
+
+}
+.navegador ul li a:hover{
+    color: white;
+    
+}
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.producto{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    text-align:  center;
+}
+.producto img{
+    width: 100%;
+}
+.producto span {
+    font-weight: bold;
+
+}
+.btn{
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    min-width: 250px;
+    background-color: brown;
+    margin: 10px;
+}
+
+.formulario input {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+}
+.formulario button{
+    background-color: white;
+    color: black;
+}
+
+.editar{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.editar input {
+    padding: 5px 10px;
+    border: 1px solid;
+    border-radius: 5px;
+}

@@ -1,25 +1,7 @@
 
-const productos = [
-    {
-        id:1,
-        nombre:"televisor 32 pulgadas",
-        precio:150000,
-        stock:12
-    },
-    {
-        id:2,
-        nombre:"televisor 14 pulgadas",
-        precio:90000,
-        stock:120
-    },
-    {
-        id:3,
-        nombre:"televisor 14 pulgadas",
-        precio:90000,
-        stock:120
-    }
-]
-let count = 4
+const productos = JSON.parse(localStorage.getItem("productos")) || []  
+console.log(productos)
+let idGenerador = 1
 const verProducto = (producto)=>{
     const tarjetaProducto = document.createElement("div")
     tarjetaProducto.className = "tarjeta"
@@ -37,17 +19,17 @@ const crearProducto = document.querySelector("#crearProducto")
     e.preventDefault()
     const datos = e.target.children
     const producto = {
-        id: count,
+        id: idGenerador,
         nombre:datos["nombre"].value,
-        precio:datos["precio"].value,
-        stock:datos["stock"].value,
+        precio: parseFloat(datos["precio"].value),
+        stock: parseInt(datos["stock"].value),
         fecha: new Date()
     }
-    count++
+    idGenerador++
     productos.push(producto)
+    localStorage.setItem("productos",JSON.stringify(productos))
     crearProducto.reset()
     verProducto(producto)
-    console.log(productos)
 })
 
 const contenedorProductos = document.querySelector("#contenedorProductos")
