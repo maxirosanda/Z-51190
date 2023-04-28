@@ -65,8 +65,9 @@
     border-radius: 5px;
     padding: 20px;
     min-width: 250px;
+    max-width: 600px;
     background-color: brown;
-    margin: 10px;
+    margin: 10px auto;
 }
 
 .formulario input {

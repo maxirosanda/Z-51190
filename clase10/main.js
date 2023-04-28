@@ -2,13 +2,23 @@
 const productos = JSON.parse(localStorage.getItem("productos")) || []  
 console.log(productos)
 let idGenerador = 1
-const verProducto = (producto)=>{
+
+const mensaje = (texto) =>{
+    Toastify({
+        text: texto,
+        duration: 2000,
+        style:{
+            background:"blueviolet"
+        }
+        }).showToast();
+}
+const verProducto = ({nombre,precio,stock})=>{
     const tarjetaProducto = document.createElement("div")
     tarjetaProducto.className = "tarjeta"
     tarjetaProducto.innerHTML = `
-                                <h3>${producto.nombre}</h3>
-                                <p>Precio: ${producto.precio}</p>
-                                <p>Stock: ${producto.stock}</p>
+                                <h3>${nombre}</h3>
+                                <p>Precio: ${precio}</p>
+                                <p>Stock: ${stock}</p>
                                 <button>Editar</button>
                                 <button>Borrar</button>
     `
@@ -30,6 +40,8 @@ const crearProducto = document.querySelector("#crearProducto")
     localStorage.setItem("productos",JSON.stringify(productos))
     crearProducto.reset()
     verProducto(producto)
+    mensaje("Producto Creado")
+
 })
 
 const contenedorProductos = document.querySelector("#contenedorProductos")

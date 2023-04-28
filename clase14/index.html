@@ -6,19 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-
-    <form id="crearProducto" class="formulario">
-        <h3>Crear Producto</h3>
-        <input type="text" placeholder="Ingrese un producto" name="nombre" required>
-        <input type="number" placeholder="Ingrese Precio del producto" name="precio" required>
-        <input type="number" placeholder="Ingrese stock" name="stock" required>
-        <button type="submit">Crear un producto</button>
-    </form>
-    <div id="contenedorProductos"></div>
+    <button class="btn" id="comprarProducto">Comprar</button>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./main.js"></script>
 </body>
 </html>
