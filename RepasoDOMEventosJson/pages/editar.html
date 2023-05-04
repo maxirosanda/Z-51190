@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Editar</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../src/css/styles.css">
 </head>
 <body>
     <header>
         <nav class="navegador">
             <ul>
-                <li><a href="./index.html">Comprar</a></li>
+                <li><a href="../index.html">Comprar</a></li>
                 <li><a href="./editar.html">Editar Productos</a></li>
+                <li><a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -21,12 +22,16 @@
         <form id="crearProducto" class="formulario">
             <input type="text" name="nombre" placeholder="Ingrese nombre de producto" required>
             <input type="text" name="descrip" placeholder="Ingrese una descripcion de producto" required>
+            <input type="text" name="stock" placeholder="Ingrese el stock" required>
             <input type="number" name="precio" placeholder="Ingrese Precio" required>
             <button class="btn" type="submit">Crear Producto</button>
         </form>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
         <section id="productos" class="productos"></section>
     </main>
-    <script src="./editar.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../src/js/mensaje.js"></script>
+    <script src="../src/js/producto.js"></script>
+    <script src="../src/js/productos.js"></script>
+    <script src="../src/js/editar.js"></script>
 </body>
 </html>

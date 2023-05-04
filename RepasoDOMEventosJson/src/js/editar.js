@@ -1,0 +1,2 @@
+verProductos()
+crearProducto()
