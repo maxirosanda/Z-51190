@@ -18,14 +18,28 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="carrito" class="productos"></section>
+    <main id="contenedorCarrito">
+        <table id="listaCarrito">
+            <tr>
+                <th>Producto</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                
+            </tr>
+        </table>
+        <div class="botones">
+            <button id="btnComprar" class="btn">Carrito Comprar</button>
+            <button id="btnBorrarCarrito" class="btn">Borrar Carrito</button>
+        </div>
     </main>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="../src/js/producto.js"></script>
     <script src="../src/js/productos.js"></script>
-    <script src="../src/js/productosCarrito.js"></script>
     <script src="../src/js/carrito.js"></script>
+    <script>
+        verProductosCarrito()
+        borrarCarrito()
+    </script>
     
 </body>
 </html>

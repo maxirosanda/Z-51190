@@ -1,2 +1,0 @@
-verProductos()
-crearProducto()

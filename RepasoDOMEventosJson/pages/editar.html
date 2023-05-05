@@ -20,8 +20,8 @@
     </header>
     <main>
         <form id="crearProducto" class="formulario">
-            <input type="text" name="nombre" placeholder="Ingrese nombre de producto" required>
-            <input type="text" name="descrip" placeholder="Ingrese una descripcion de producto" required>
+            <textarea type="text" name="nombre" minlength="15" maxlength="50"   placeholder="Ingrese nombre de producto" required></textarea>
+            <textarea type="text" name="descrip" minlength="40" maxlength="200" placeholder="Ingrese una descripcion de producto" required></textarea>
             <input type="text" name="stock" placeholder="Ingrese el stock" required>
             <input type="number" name="precio" placeholder="Ingrese Precio" required>
             <button class="btn" type="submit">Crear Producto</button>
@@ -29,9 +29,10 @@
         <section id="productos" class="productos"></section>
     </main>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="../src/js/mensaje.js"></script>
-    <script src="../src/js/producto.js"></script>
     <script src="../src/js/productos.js"></script>
-    <script src="../src/js/editar.js"></script>
+    <script>
+        verProductos()
+        crearProducto()
+    </script>
 </body>
 </html>

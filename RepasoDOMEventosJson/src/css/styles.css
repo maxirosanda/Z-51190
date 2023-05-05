@@ -30,7 +30,8 @@
     justify-content: space-around;
 }
 .producto{
-    width: 250px;
+    width: 350px;
+    min-height: 550px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -40,6 +41,7 @@
     padding: 10px;
     margin: 10px;
     align-items: center;
+    justify-content: space-around;
     text-align:  center;
 }
 .producto img{
@@ -48,6 +50,11 @@
 .producto span {
     font-weight: bold;
 
+}
+.producto form input {
+    margin: 10px;
+    padding: 5px 10px;
+    text-align: center;
 }
 .btn{
     width: 100%;
@@ -64,16 +71,19 @@
     gap: 10px;
     border-radius: 5px;
     padding: 20px;
-    min-width: 250px;
+    min-width: 350px;
     max-width: 600px;
     background-color: brown;
     margin: 10px auto;
 }
 
-.formulario input {
+.formulario input,.formulario textarea {
     padding: 5px 15px;
     border: none;
     border-radius: 5px;
+}
+.formulario textarea:nth-of-type(2){
+    height: 100px;
 }
 .formulario button{
     background-color: white;
@@ -81,12 +91,51 @@
 }
 
 .editar{
+    width: 320px;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-.editar input {
+.editar input,.editar textarea {
     padding: 5px 10px;
     border: 1px solid;
     border-radius: 5px;
+}
+.editar textarea:nth-of-type(2){
+    height: 100px;
+}
+
+#contenedorCarrito{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#listaCarrito{
+    width: 600px;
+    margin: 15px;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+#listaCarrito td, #listaCarrito th{
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+}
+#listaCarrito img{
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+.botones{
+    bottom:0;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-top: 40px;
+}
+.botones .btn{
+    width: 250px;
+    margin: 10px;
 }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./src/css/styles.css">
 </head>
@@ -24,9 +25,13 @@
         </section>
     </main>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="./src/js/mensaje.js"></script>
-    <script src="./src/js/productosCarrito.js"></script>
-    <script src="./src/js/producto.js"></script>
-    <script src="./src/js/index.js"></script>
+    <script src="./src/js/carrito.js"></script>
+    <script src="./src/js/productos.js"></script>
+    <script>
+        productos.forEach(producto => {
+            verProducto(producto,producto.verTarjeta())
+            agregarCarrito(producto.id)
+        })
+    </script>
 </body>
 </html>
