@@ -1,0 +1,20 @@
+[
+    {
+        "nombre": "Heladera Drean HDR400F11 negra con freezer 392L 220V",
+        "descripcion": "Los 7 niveles de temperatura ayudarán a la conservación de acuerdo a tus necesidades y preferencias. Cada vez que abrís la puerta se cuela aire caliente; por eso, al tener control de temperatura vas a poder regular los grados para que tus productos se mantengan siempre frescos.",
+        "imagen": "heladera.webp",
+        "clases": "active"
+    },
+    {
+        "nombre": "Smart TV Philips 7000 Series 55PUD7406/77 LED Android 10 4K 55 110V/240V",
+        "descripcion": "El compromiso de Philips es brindar nuevas e innovadoras tecnologías. Es por esa razón que se centra en los detalles para poder ofrecer productos que marcan la diferencia y crean una experiencia visual más increíble y auténtica",
+        "imagen": "tele55.webp",
+        "clases": ""
+    },
+    {
+        "nombre": "Samsung Galaxy A54 5g 256gb 8gb Ram Awesome Graphite",
+        "descripcion": "Con su potente procesador y memoria RAM de 8 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras.",
+        "imagen": "celular.jpg",
+        "clases": ""
+    }
+]

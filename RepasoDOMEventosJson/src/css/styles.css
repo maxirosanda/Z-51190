@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .navegador{
     background-color: brown;
 }
@@ -23,6 +22,11 @@
 .navegador ul li a:hover{
     color: white;
     
+}
+.carousel-item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
 .productos{
     display: flex;
